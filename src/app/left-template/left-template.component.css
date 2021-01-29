@@ -1,0 +1,20 @@
+.left{
+    color:white;
+    display: grid;
+    align-self: start;
+    justify-content: center;
+}
+
+.icon {
+
+    padding : 15px;
+    font-size: 20px;
+}
+
+.tweet {
+    display: grid;
+    background-color: gray;
+    padding: 20px 100px;
+    justify-content: center;
+    border-radius: 30px;
+}
