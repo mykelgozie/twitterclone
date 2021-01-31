@@ -37,8 +37,8 @@ export class CenterSection1Component implements OnInit {
 
   addTweet(){
 
-
-    this.tweets.addTweets("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU", "zoom","6/9/2000","jack","jake_f","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU");
+    this.tweets.addTweets("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU", this.textArea,"6/9/2000","jack","jake_f","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU");
+    this.textArea ="";
   }
 
 
