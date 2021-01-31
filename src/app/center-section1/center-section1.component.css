@@ -1,6 +1,9 @@
 .center-section1{
    
     color:  white;
+    margin-top: 60px;
+    height: 100%;
+    overflow-y: auto;
     
 }
 
@@ -50,12 +53,14 @@
     padding: 15px 0px;
 
 }
-.tweet span {
+.tweet button {
 
     background-color: grey;
     margin-left: auto;
     padding: 10px 25px;
     border-radius: 35px;
+    font-weight: bolder;
+    outline: none;
 
 
 }
@@ -66,6 +71,8 @@
     padding: 0px;
     margin-top: 15px;
    align-content: center;
+   border-top: 1px solid white;
+   padding-top: 20px;
    
 }
 
@@ -107,6 +114,7 @@
 
 .sub1{
   margin-right: 10px;
+
 }
 
 .tweet-block img{
@@ -118,5 +126,21 @@
 
 .icon {
 
-    margin-right: 40px;
+    margin-right: 35px;
+}
+
+.icon i {
+
+
+    padding: 6px;
+   
+
+}
+
+.icon i:hover{
+
+  
+    background-color: grey;
+    border-radius: 50%;
+    color: red;
 }

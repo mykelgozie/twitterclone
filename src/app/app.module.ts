@@ -9,6 +9,7 @@ import { RightTemplateComponent } from './right-template/right-template.componen
 import { RightSection1Component } from './right-section1/right-section1.component';
 import { RightSection2Component } from './right-section2/right-section2.component';
 import { CenterSection1Component } from './center-section1/center-section1.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CenterSection1Component } from './center-section1/center-section1.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CenterTemplateComponent implements OnInit {
 
+  textArea:string = "";
+  textCheck:boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addTweet(){
+
+    console.log("hey");
   }
 
 }
