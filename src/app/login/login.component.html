@@ -6,7 +6,7 @@
     <div>
         <h2>Login To Twitter</h2>
     </div>
-   
+   <p class="error-display" *ngIf ="error">{{ errorMessage }}</p>
    <div class="input">  
         <input type="email" placeholder="Email" ngModel  name = "email" required email #mail = "ngModel"/>
         <p class="error-log" *ngIf = "!mail.valid && mail.touched">Please Enter a valid Email</p>

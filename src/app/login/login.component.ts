@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { user } from '../services/user.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -10,7 +12,10 @@ import { user } from '../services/user.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private user : user ) { }
+  errorMessage:string = "";
+  error :boolean = false ;
+
+  constructor(private user : user, private router : Router ) { }
 
   ngOnInit(): void {
   }
@@ -23,12 +28,16 @@ export class LoginComponent implements OnInit {
 
 
     if(form.value.email == this.user.email && form.value.password == this.user.password){
-
-        console.log("hey");
+      this.router.navigate(['/home']);
+    } else {
+      this.error = true;
+      this.errorMessage = "Invalid User Detail"
+      setTimeout(()=>{
+        this.errorMessage = ""
+        this.error = false;
+      }, 3000)
     }
-    console.log(form.value.email);
-    console.log(form.value.password);
-    console.log(user);
+
   }
 
 }
