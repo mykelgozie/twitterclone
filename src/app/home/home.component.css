@@ -1,0 +1,25 @@
+.wrapper{
+
+    display:grid;
+    grid-template-columns:0.7fr 1fr 0.7fr;
+    grid-auto-rows: minmax(500px, auto );
+  
+    
+   
+
+}
+
+.wrapper div{
+
+    background-color: black;
+  
+}
+
+.box2{
+
+    border: 1.5px solid white;
+}
+
+.box1{
+   
+}

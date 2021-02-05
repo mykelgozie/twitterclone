@@ -10,23 +10,44 @@ import { RightSection1Component } from './right-section1/right-section1.componen
 import { RightSection2Component } from './right-section2/right-section2.component';
 import { CenterSection1Component } from './center-section1/center-section1.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { PageComponent } from './page/page.component';
+import  { Routes, RouterModule } from '@angular/router';
+
+
+const appRoutes : Routes = [
+
+  { path:'', component: LoginComponent},
+  { path :'home', component : HomeComponent}
+ 
+];
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeftTemplateComponent,
+    LeftTemplateComponent, 
     CenterTemplateComponent,
     RightTemplateComponent,
     RightSection1Component,
     RightSection2Component,
-    CenterSection1Component
+    CenterSection1Component,
+    LoginComponent,
+    HomeComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 

@@ -13,25 +13,20 @@
                 </div>
              
             </div>
-            <div>
-
+            <div *ngFor ="let follow of  allFollows">
                 <div class="sub-trends">
+                
                     <div class="image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"/>
+                        <img src= {{follow.img}}/>
                         <div class="handle">
-                            <h3>hey hey</h3>
-                            <p> @steydsyhhbyu </p>
+                            <h3>{{ follow.name}}</h3>
+                            <p> @ {{ follow.handle}} </p>
                         </div>
                     </div>
                     <div class="follow">
                          follow
                     </div>
-    
-    
-                </div>
-             
-                
-
+                </div>           
             </div>
             <div class="more">
                 Show More

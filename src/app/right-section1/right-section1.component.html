@@ -20,19 +20,20 @@
              
             </div>
             <div>
-
+              <div *ngFor = "let trend of allTrends; index as i">
                 <div class="sub-trends">
                     <div class="">
-                        <h4>1 - Trending</h4>
+                        <h4>{{i+1}} - Trending</h4>
                         <h3># sslsjlcjlscjl</h3>
                         <p>38.6k Tweets</p>
                     </div>
                     <div>
                         <i class="fa fa-ellipsis-h"></i>
                     </div>
-    
-    
+
                 </div>
+              </div>
+              
              
                 
 

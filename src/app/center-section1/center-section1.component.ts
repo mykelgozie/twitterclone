@@ -33,6 +33,8 @@ export class CenterSection1Component implements OnInit {
       
     })
 
+     console.log(item);  
+
   }
 
   addTweet(){
