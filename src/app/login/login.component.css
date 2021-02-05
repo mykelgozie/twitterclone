@@ -4,6 +4,9 @@
     margin-top: 100px;
     flex-direction: column;
     text-align: center;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .input input {
@@ -36,4 +39,17 @@
     background-color: grey;
     border: none;
     cursor: pointer;
+}
+
+input.ng-invalid.ng-touched {
+    border:1px solid red;
+}
+
+.error-log{
+
+    line-height: 1px;
+    text-align: left;
+    margin-left: 165px;
+    color: red;
+
 }
