@@ -14,12 +14,16 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { PageComponent } from './page/page.component';
 import  { Routes, RouterModule } from '@angular/router';
+import { AuthGaurd } from './services/auth-gaurd.service';
+import { loginstatus } from './services/login.service';
 
 
 const appRoutes : Routes = [
 
   { path:'', component: LoginComponent},
-  { path :'home', component : HomeComponent}
+  { path :'home', canActivate:[AuthGaurd], component : HomeComponent},
+  { path:'page', component: PageComponent}
+
  
 ];
 
@@ -46,7 +50,7 @@ const appRoutes : Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [AuthGaurd, loginstatus],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
